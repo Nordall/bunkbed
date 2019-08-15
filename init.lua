@@ -24,7 +24,6 @@ beds.register_bed("darkageobjects:bunk_bed", {
 	},
 	nodebox = {
 		bottom = {
-			fixed = {
 			{0.375, -0.375, -0.375, 0.5, -0.125, 0.5}, -- Brett_rechts
 			{-0.5, -0.375, -0.375, -0.375, -0.125, 0.5}, -- Brett_links
 			{-0.5, -0.5, -0.5, -0.375, 0.5, -0.375}, -- Pfosten_links
@@ -35,10 +34,8 @@ beds.register_bed("darkageobjects:bunk_bed", {
 			{-0.5, -0.375, -0.5, 0.5, -0.25, 0.5}, -- Boden
 			{-0.375, -0.25, -0.375, 0.375, -0.125, 0.1875}, -- Kopfkissen
 			{-0.375, -0.25, 0.1875, 0.375, -0.125, 0.5}, -- Kissen
-            },
 		},
 		top = {
-            fixed = {
 			{-0.5, -0.5, 0.4375, -0.375, 0.1875, 0.5},
 			{0.375, -0.5, 0.4375, 0.5, 0.1875, 0.5},
 			{-0.5, 0, 0.4375, 0.5, 0.125, 0.5},
@@ -46,12 +43,9 @@ beds.register_bed("darkageobjects:bunk_bed", {
 			{-0.5, -0.375, -0.5, -0.4375, -0.125, 0.5},
 			{0.4375, -0.375, -0.5, 0.5, -0.125, 0.5},
 			{-0.4375, -0.3125, -0.5, 0.4375, -0.0625, 0.4375},
-
-            },
 		},
 	},
 	selectionbox = {-0.5, -0.5, -0.5, 0.5, 0.06, 1.5},
-    output = "darkageobjects:bunk_bed 1",
 	recipe = {
 		{"group:stick", "group:stick", "group:stick"},
 		{"wool:white", "wool:white", "wool:white"},
