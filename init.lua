@@ -1,53 +1,55 @@
+darkageobjects = {}
+
+local invcube = "[inventorycube{darkageobjects_bb_top_top.png{darkageobjects_bb_top_side.png{darkageobjects_bb_top_side.png^[transformFX"
+
 
 beds.register_bed("darkageobjects:bunk_bed", {
 	description = "Bunk Bed",
-	inventory_image = "beds_bunkbed_sides32x16.png",
-	wield_image = "beds_bunkbed_sides32x16.png",
+	inventory_image = invcube, --"darkageobjects_bb_sides32x16.png",
+	wield_image = "darkageobjects_bb_sides32x16.png",
 	tiles = {
-		bottom = {
-     --up (+Y), down (-Y), right (+X), left (-X), back (+Z), front (-Z).
-			"beds_bunkbed_bottom_top.png^[transformR90",
-			"beds_bunkbed_under.png",
-			"beds_bunkbed_bottom_side.png",
-			"beds_bunkbed_bottom_side.png",
-			"beds_bunkbed_bottom_foot.png",
-			"beds_bunkbed_bottom_head.png",
-		},
 		top = {
-			"beds_bunkbed_top_top.png^[transformR90",
-			"beds_bunkbed_under.png",
-			"beds_bunkbed_top_side.png",
-			"beds_bunkbed_top_side.png",
-			"beds_bunkbed_top_foot.png",
-            "beds_bunkbed_top_head.png",
+     --up (+Y), down (-Y), right (+X), left (-X), back (+Z), front (-Z).
+			"darkageobjects_bb_bottom_top.png^[transformR180",
+			"darkageobjects_bb_under.png",
+			"darkageobjects_bb_bottom_side.png^[transformFX",
+			"darkageobjects_bb_bottom_side.png",
+			"darkageobjects_bb_bottom_foot.png",
+   "darkageobjects_bb_bottom_middle.png^darkageobjects_bb_bottom_foot.png",
+
+		},
+		bottom = {
+			"darkageobjects_bb_top_top.png^[transformR180",
+			"darkageobjects_bb_under.png",
+			"darkageobjects_bb_top_side.png^[transformFX",
+			"darkageobjects_bb_top_side.png",
+			"darkageobjects_bb_top_head.png",
+	"darkageobjects_bb_top_middle.png^darkageobjects_bb_top_head.png",
+
 		}
 	},
 	nodebox = {
 		bottom = {
-			{0.375, -0.375, -0.375, 0.5, -0.125, 0.5}, -- Brett_rechts
-			{-0.5, -0.375, -0.375, -0.375, -0.125, 0.5}, -- Brett_links
-			{-0.5, -0.5, -0.5, -0.375, 0.5, -0.375}, -- Pfosten_links
-			{0.375, -0.5, -0.5, 0.5, 0.5, -0.375}, -- Pfosten_rechts
-			{-0.5, -0.375, -0.5, 0.5, -0.125, -0.375}, -- Brett_vorne
-			{-0.5, 0.25, -0.5, 0.5, 0.375, -0.375}, -- Leiste_vorn_oben
-			{-0.5, 0, -0.5, 0.5, 0.125, -0.375}, -- Leiste_vorn_unten
-			{-0.5, -0.375, -0.5, 0.5, -0.25, 0.5}, -- Boden
-			{-0.375, -0.25, -0.375, 0.375, -0.125, 0.1875}, -- Kopfkissen
-			{-0.375, -0.25, 0.1875, 0.375, -0.125, 0.5}, -- Kissen
+            {-0.5, -0.375, -0.375, 0.5, -0.125, 0.5}, -- box
+			{-0.5, -0.5, -0.5, -0.375, 0.5, -0.375}, -- post_left
+			{0.375, -0.5, -0.5, 0.5, 0.5, -0.375}, -- post_right
+			{-0.375, 0.25, -0.5, 0.375, 0.375, -0.375}, -- crossbar_up
+			{-0.375, 0, -0.5, 0.375, 0.125, -0.375}, -- crossbar_down
+			{-0.375, -0.125, -0.375, 0.375, -0.0625, 0.5}, -- pillow
+			{-0.375, -0.375, -0.5, 0.375, -0.125, -0.375}, -- crossbar_box
+			
 		},
 		top = {
-			{-0.5, -0.375, -0.5, -0.375, -0.125, 0.375}, -- Brett_rechts
-			{0.375, -0.375, -0.5, 0.5, -0.125, 0.375}, -- Brett_links
-			{0.375, -0.5, 0.375, 0.5, 0.5, 0.5}, -- Pfosten_links
-			{-0.5, -0.5, 0.375, -0.375, 0.5, 0.5}, -- Pfosten_rechts
-			{-0.5, -0.375, 0.375, 0.5, -0.125, 0.5}, -- Brett_vorne
-			{-0.5, 0.25, 0.375, 0.5, 0.375, 0.5}, -- Leiste_vorn_oben
-			{-0.5, 0, 0.375, 0.5, 0.125, 0.5}, -- Leiste_vorn_unten
-			{-0.5, -0.375, -0.5, 0.5, -0.25, 0.5}, -- Boden
-			{-0.375, -0.25, -0.5, 0.375, -0.125, 0.375}, -- Mittelkissen
+			{-0.5, -0.375, -0.5, 0.5, -0.125, 0.375}, -- box
+			{-0.5, -0.5, 0.375, -0.375, 0.5, 0.5}, -- post_left
+			{0.375, -0.5, 0.375, 0.5, 0.5, 0.5}, -- post_right
+			{-0.375, -0.125, -0.5, 0.375, -0.0625, 0.375}, -- pillow
+			{-0.375, 0.25, 0.375, 0.375, 0.375, 0.5}, -- crossbar_up
+			{-0.5, 0, 0.375, 0.5, 0.125, 0.5}, -- crossbar_down
+			{-0.5, -0.375, 0.375, 0.5, -0.125, 0.5}, -- crossbar_box
 		},
 	},
-	selectionbox = {-0.5, -0.5, -0.5, 0.5, 0.5, 1.5},
+	selectionbox = {-0.5, -0.5, -0.5, 0.5, -0.0625, 1.5},
 	recipe = {
 		{"group:stick", "group:stick", "group:stick"},
 		{"wool:white", "wool:white", "wool:white"},
