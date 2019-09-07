@@ -1,12 +1,9 @@
 darkageobjects = {}
 
-local invcube = "[inventorycube{darkageobjects_bb_top_top.png{darkageobjects_bb_top_side.png{darkageobjects_bb_top_side.png^[transformFX"
-
-
 beds.register_bed("darkageobjects:bunk_bed", {
 	description = "Bunk Bed",
-	inventory_image = invcube, --"darkageobjects_bb_sides32x16.png",
-	wield_image = "darkageobjects_bb_sides32x16.png",
+	inventory_image = "darkageobjects_bb_inv.png",
+	wield_image = "darkageobjects_bb_inv.png",
 	tiles = {
 		top = {
      --up (+Y), down (-Y), right (+X), left (-X), back (+Z), front (-Z).
@@ -15,7 +12,7 @@ beds.register_bed("darkageobjects:bunk_bed", {
 			"darkageobjects_bb_bottom_side.png^[transformFX",
 			"darkageobjects_bb_bottom_side.png",
 			"darkageobjects_bb_bottom_foot.png",
-   "darkageobjects_bb_bottom_middle.png^darkageobjects_bb_bottom_foot.png",
+ "darkageobjects_bb_bottom_middle.png^darkageobjects_bb_bottom_foot.png",
 
 		},
 		bottom = {
@@ -23,7 +20,7 @@ beds.register_bed("darkageobjects:bunk_bed", {
 			"darkageobjects_bb_under.png",
 			"darkageobjects_bb_top_side.png^[transformFX",
 			"darkageobjects_bb_top_side.png",
-			"darkageobjects_bb_top_head.png",
+            "darkageobjects_bb_top_head.png",
 	"darkageobjects_bb_top_middle.png^darkageobjects_bb_top_head.png",
 
 		}
@@ -49,7 +46,7 @@ beds.register_bed("darkageobjects:bunk_bed", {
 			{-0.5, -0.375, 0.375, 0.5, -0.125, 0.5}, -- crossbar_box
 		},
 	},
-	selectionbox = {-0.5, -0.5, -0.5, 0.5, -0.0625, 1.5},
+	selectionbox = {-0.5, -0.5, -0.5, 0.5, 0.5, 1.5},
 	recipe = {
 		{"group:stick", "group:stick", "group:stick"},
 		{"wool:white", "wool:white", "wool:white"},
