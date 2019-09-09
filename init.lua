@@ -2,8 +2,8 @@ darkageobjects = {}
 
 beds.register_bed("darkageobjects:bunk_bed", {
 	description = "Bunk Bed",
-	inventory_image = "darkageobjects_bb_inv.png",
-	wield_image = "darkageobjects_bb_inv.png",
+	inventory_image = "darkageobjects_bb_inv2.png", --with pillow by TumeniNodes
+	wield_image = "darkageobjects_bb_inv2.png",
 	tiles = {
 		top = {
      --up (+Y), down (-Y), right (+X), left (-X), back (+Z), front (-Z).
