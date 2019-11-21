@@ -1,27 +1,27 @@
-darkageobjects = {}
+bunkbed = {}
 
-beds.register_bed("darkageobjects:bunk_bed", {
+beds.register_bed("bunkbed:bunk_bed", {
 	description = "Bunk Bed",
-	inventory_image = "darkageobjects_bb_inv2.png", --with pillow by TumeniNodes
-	wield_image = "darkageobjects_bb_inv2.png",
+	inventory_image = "bunkbed_inv2.png", --with pillow by TumeniNodes
+	wield_image = "bunkbed_inv2.png",
 	tiles = {
 		top = {
      --up (+Y), down (-Y), right (+X), left (-X), back (+Z), front (-Z).
-			"darkageobjects_bb_bottom_top.png^[transformR180",
-			"darkageobjects_bb_under.png",
-			"darkageobjects_bb_bottom_side.png^[transformFX",
-			"darkageobjects_bb_bottom_side.png",
-			"darkageobjects_bb_bottom_foot.png",
- "darkageobjects_bb_bottom_middle.png^darkageobjects_bb_bottom_foot.png",
+			"bunkbed_bottom_top.png^[transformR180",
+			"bunkbed_under.png",
+			"bunkbed_bottom_side.png^[transformFX",
+			"bunkbed_bottom_side.png",
+			"bunkbed_bottom_foot.png",
+ "bunkbed_bottom_middle.png^bunkbed_bottom_foot.png",
 
 		},
 		bottom = {
-			"darkageobjects_bb_top_top.png^[transformR180",
-			"darkageobjects_bb_under.png",
-			"darkageobjects_bb_top_side.png^[transformFX",
-			"darkageobjects_bb_top_side.png",
-            "darkageobjects_bb_top_head.png",
-	"darkageobjects_bb_top_middle.png^darkageobjects_bb_top_head.png",
+			"bunkbed_top_top.png^[transformR180",
+			"bunkbed_under.png",
+			"bunkbed_top_side.png^[transformFX",
+			"bunkbed_top_side.png",
+            "bunkbed_top_head.png",
+	"bunkbed_top_middle.png^bunkbed_top_head.png",
 
 		}
 	},
