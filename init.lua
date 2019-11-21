@@ -49,7 +49,7 @@ beds.register_bed("bunkbed:bunk_bed", {
 	selectionbox = {-0.5, -0.5, -0.5, 0.5, 0.5, 1.5},
 	recipe = {
 		{"group:stick", "group:stick", "group:stick"},
-		{"wool:white", "wool:white", "wool:white"},
+		{"farming:straw", "farming:straw", "farming:straw"},
 		{"group:wood", "group:wood", "group:wood"},
 	},
 })
