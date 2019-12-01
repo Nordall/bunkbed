@@ -1,7 +1,11 @@
 bunkbed = {}
 
+-- Used for localization
+
+local S = minetest.get_translator("bunkbed")
+
 beds.register_bed("bunkbed:bunk_bed", {
-	description = "Bunk Bed",
+	description = S("Bunk Bed"),
 	inventory_image = "bunkbed_inv2.png", --with pillow by TumeniNodes
 	wield_image = "bunkbed_inv2.png",
 	tiles = {
@@ -34,7 +38,7 @@ beds.register_bed("bunkbed:bunk_bed", {
 			{-0.375, 0, -0.5, 0.375, 0.125, -0.375}, -- crossbar_down
 			{-0.375, -0.125, -0.375, 0.375, -0.0625, 0.5}, -- pillow
 			{-0.375, -0.375, -0.5, 0.375, -0.125, -0.375}, -- crossbar_box
-			
+
 		},
 		top = {
 			{-0.5, -0.375, -0.5, 0.5, -0.125, 0.375}, -- box
